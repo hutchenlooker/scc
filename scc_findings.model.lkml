@@ -1,7 +1,8 @@
 connection: "hutz_scc"
 
-include: "*.view.lkml"
+
 include: "/**/*.dashboard"
+include: "/views/*.view.lkml"
 
 # explore: findings_daily {}
 
