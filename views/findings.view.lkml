@@ -1,6 +1,6 @@
 # Un-hide and use this explore, or copy the joins into another explore, to get all the fully nested relationships from this view
 explore: findings {
-  hidden: yes
+  # hidden: yes
     join: findings__finding__files {
       view_label: "Findings: Finding Files"
       sql: LEFT JOIN UNNEST(${findings.finding__files}) as findings__finding__files ;;
@@ -1164,28 +1164,28 @@ view: findings {
   # ----- Sets of fields for drilling ------
   set: detail {
     fields: [
-	finding_id,
-	finding__name,
-	resource__name,
-	finding__module_name,
-	resource__parent_name,
-	resource__display_name,
-	resource__project_name,
-	finding__database__name,
-	finding__canonical_name,
-	finding__access__user_name,
-	finding__access__method_name,
-	finding__database__user_name,
-	finding__kernel_rootkit__name,
-	finding__access__service_name,
-	finding__parent_display_name,
-	resource__parent_display_name,
-	resource__project_display_name,
-	finding__security_posture__name,
-	finding__database__display_name,
-	finding__access__service_account_key_name,
-	finding__cloud_armor__security_policy__name
-	]
+  finding_id,
+  finding__name,
+  resource__name,
+  finding__module_name,
+  resource__parent_name,
+  resource__display_name,
+  resource__project_name,
+  finding__database__name,
+  finding__canonical_name,
+  finding__access__user_name,
+  finding__access__method_name,
+  finding__database__user_name,
+  finding__kernel_rootkit__name,
+  finding__access__service_name,
+  finding__parent_display_name,
+  resource__parent_display_name,
+  resource__project_display_name,
+  finding__security_posture__name,
+  finding__database__display_name,
+  finding__access__service_account_key_name,
+  finding__cloud_armor__security_policy__name
+  ]
   }
 
 }
