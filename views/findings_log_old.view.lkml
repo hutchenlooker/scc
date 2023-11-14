@@ -1,4 +1,4 @@
-view: findings_log {
+view: findings_log_old {
   sql_table_name: `prj-b-seed-55f0.scc_export.findings`
     ;;
 
